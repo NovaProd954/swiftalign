@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "swiftalign"
+version = "0.1.0"
+description = "Compact alignment training scaffold — DPO & GRPO with LoRA/QLoRA"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "NovatasticRoScript" }
+]
+requires-python = ">=3.9"
+keywords = [
+  "alignment", "DPO", "GRPO", "LoRA", "QLoRA",
+  "RLHF", "fine-tuning", "LLM", "transformers"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+  "torch>=2.0",
+  "transformers>=4.40",
+  "trl>=0.8",
+  "peft>=0.10",
+  "datasets>=2.18",
+  "accelerate>=0.28",
+  "rich>=13.0",
+]
+
+[project.optional-dependencies]
+qlora = [
+  "bitsandbytes>=0.43",
+]
+flash = [
+  "flash-attn>=2.5",
+]
+dev = [
+  "pytest>=7.0",
+  "black",
+  "isort",
+  "ruff",
+]
+all = [
+  "bitsandbytes>=0.43",
+  "pytest>=7.0",
+  "black",
+  "isort",
+  "ruff",
+]
+
+[project.scripts]
+swiftalign = "train:main"
+
+[project.urls]
+Homepage = "https://github.com/NovatasticRoScript/swiftalign"
+Repository = "https://github.com/NovatasticRoScript/swiftalign"
+Issues = "https://github.com/NovatasticRoScript/swiftalign"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["swiftalign*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"

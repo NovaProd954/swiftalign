@@ -1,0 +1,16 @@
+# SwiftAlign — core requirements
+# Install with: pip install -r requirements.txt
+#
+# For QLoRA support also run:
+#   pip install bitsandbytes>=0.43
+#
+# For FlashAttention-2 (Ampere+ GPUs only):
+#   pip install flash-attn>=2.5 --no-build-isolation
+
+torch>=2.0
+transformers>=4.40
+trl>=0.8
+peft>=0.10
+datasets>=2.18
+accelerate>=0.28
+rich>=13.0
