@@ -1,6 +1,6 @@
 # SwiftAlign
 
-'''text
+    '''text
 
   _________       .__  _____  __         .__  .__               
  /   _____/_  _  _|__|/ ____\/  |______  |  | |__| ____   ____  
@@ -9,7 +9,7 @@
 /_______  / \/\_/ |__||__|   |__| (____  /____/__\___  /|___|  /
         \/                             \/       /_____/      \/ 
 
-'''
+    '''
 
 **Compact alignment training scaffold — DPO & GRPO with optional LoRA / QLoRA**
 
