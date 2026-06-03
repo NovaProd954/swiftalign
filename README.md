@@ -1,5 +1,16 @@
 # SwiftAlign
 
+'''text
+
+  _________       .__  _____  __         .__  .__               
+ /   _____/_  _  _|__|/ ____\/  |______  |  | |__| ____   ____  
+ \_____  \\ \/ \/ /  \   __\\   __\__  \ |  | |  |/ ___\ /    \ 
+ /        \\     /|  ||  |   |  |  / __ \|  |_|  / /_/  >   |  \
+/_______  / \/\_/ |__||__|   |__| (____  /____/__\___  /|___|  /
+        \/                             \/       /_____/      \/ 
+
+'''
+
 **Compact alignment training scaffold — DPO & GRPO with optional LoRA / QLoRA**
 
 SwiftAlign is a demo-oriented training pipeline for experimenting with alignment methods
